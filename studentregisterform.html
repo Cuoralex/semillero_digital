@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario Estudiantes - Semillero Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <div class="p-8 max-w-4xl mx-auto filter grayscale">
+    <div class="text-center mb-12">
+      <h1 class="text-3xl font-bold mb-8 border-b pb-4">
+        Formulario de Inscripción para Estudiantes
+      </h1>
+      <p class="text-base leading-relaxed mx-auto lg:w-3/4">
+        Complete los siguientes campos para registrarse como estudiante.
+      </p>
+    </div>
+
+    <form method="post" class="space-y-10">
+
+      <!-- 1. Información Personal -->
+      <section>
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">1. Información Personal</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="nombre" class="block font-medium">Nombre Completo *</label>
+            <input type="text" name="nombre" id="nombre" required class="w-full border rounded px-4 py-2" />
+          </div>
+          <div>
+            <label for="documento" class="block font-medium">Tipo y Número de Documento *</label>
+            <input type="text" name="documento" id="documento" required class="w-full border rounded px-4 py-2" />
+          </div>
+          <div>
+            <label for="correo" class="block font-medium">Correo Electrónico Institucional *</label>
+            <input type="email" name="correo" id="correo" required class="w-full border rounded px-4 py-2" />
+          </div>
+          <div>
+            <label for="telefono" class="block font-medium">Teléfono *</label>
+            <input type="tel" name="telefono" id="telefono" required class="w-full border rounded px-4 py-2" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Información Académica -->
+      <section>
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">2. Información Académica</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="programa" class="block font-medium">Programa de Formación *</label>
+            <input type="text" name="programa" id="programa" required class="w-full border rounded px-4 py-2" />
+          </div>
+          <div>
+            <label for="semestre" class="block font-medium">Semestre Actual *</label>
+            <select name="semestre" id="semestre" required class="w-full border rounded px-4 py-2">
+              <option value="">Seleccione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label for="skills" class="block font-medium">Habilidades Técnicas (separadas por coma)</label>
+            <textarea name="skills" id="skills" rows="3" class="w-full border rounded px-4 py-2"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Motivación -->
+      <section>
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">3. Motivación y Expectativas</h2>
+        <div class="space-y-6">
+          <div>
+            <label for="motivacion" class="block font-medium">¿Por qué quieres participar en el Semillero Digital? *</label>
+            <textarea name="motivacion" id="motivacion" rows="4" required class="w-full border rounded px-4 py-2"></textarea>
+          </div>
+          <div>
+            <label for="disponibilidad" class="block font-medium">Disponibilidad de tiempo semanal (horas estimadas) *</label>
+            <input type="number" name="disponibilidad" id="disponibilidad" required class="w-full border rounded px-4 py-2" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Autorizaciones -->
+      <section>
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">4. Autorizaciones</h2>
+        <label class="flex items-start gap-2">
+          <input type="checkbox" name="autorizacion" required class="mt-1" />
+          <span>
+            Autorizo el tratamiento de mis datos personales según la política de privacidad institucional.
+          </span>
+        </label>
+      </section>
+
+      <!-- Botón Enviar -->
+      <div class="text-center">
+        <button type="submit" class="bg-gray-700 text-white py-2 px-6 rounded hover:bg-gray-800 transition">
+          Enviar Inscripción
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

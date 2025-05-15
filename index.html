@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAL ICHIL - Condimentos Ancestrales</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md px-6 py-4 sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+
+            <!-- Logo -->
+            <a href="https://www.cesde.edu.co" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.cesde.edu.co/wp-content/uploads/2023/02/logo-Cesde-2023.svg" alt="Cesde"
+                    width="180" height="40" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6 text-gray-700 text-sm font-medium">
+                <a href="#hero" class="hover:text-blue-600 transition-colors duration-200">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600 transition-colors duration-200">Servicios</a>
+                <a href="#nosotros" class="hover:text-blue-600 transition-colors duration-200">Nosotros</a>
+                <a href="#contacto" class="hover:text-blue-600 transition-colors duration-200">Contacto</a>
+                <a href="/register.html"
+                    class="px-4 py-2 rounded-md bg-pink-400 text-white hover:bg-pink-700 transition">Registro</a>
+                <a href="/login.html"
+                    class="px-4 py-2 rounded-md border border-pink-600 text-pink-600 hover:bg-pink-50 transition">Login</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 text-xl">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu (oculto inicialmente) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 space-y-4 text-gray-700 text-sm font-medium">
+            <a href="#hero" class="block px-4 py-2 hover:bg-gray-100">Inicio</a>
+            <a href="#servicios" class="block px-4 py-2 hover:bg-gray-100">Servicios</a>
+            <a href="#nosotros" class="block px-4 py-2 hover:bg-gray-100">Nosotros</a>
+            <a href="#contacto" class="block px-4 py-2 hover:bg-gray-100">Contacto</a>
+            <a href="/register.html"
+                class="block px-4 py-2 rounded-md bg-pink-400 text-white hover:bg-pink-700 transition">Registro</a>
+            <a href="/login.html"
+                class="block px-4 py-2 rounded-md border border-pink-600 text-pink-600 hover:bg-pink-50 transition">Login</a>
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section id="hero" class="h-screen w-full">
+        <img src="https://www.unipiloto.edu.co/wp-content/uploads/2017/10/NoticiasDEE_01a1.jpg" alt="banner"
+            title="banner" class="w-full h-[100%] object-cover" />
+    </section>
+
+    <!--- Logo -->
+    <div class="bg-white p-5 flex justify-center text-center">
+        <a href="https://www.cesde.edu.co">
+            <img src="https://www.cesde.edu.co/wp-content/uploads/2024/11/Logo-Suscripcion-Empresarial.jpg" alt="Cesde"
+                title="Cesde" width="264" />
+        </a>
+    </div>
+
+    <!-- Inscripción -->
+    <section id="inscripcion" class="bg-[#E3287A] text-white py-20 px-6 text-center">
+        <h3 class="text-3xl font-bold mb-6">Suscripción para Empresas</h3>
+        <button
+            class="rounded-lg border border-white py-3 px-6 text-sm font-bold uppercase transition-all hover:opacity-75 focus:ring focus:ring-pink-200 active:opacity-85"
+            onclick="window.location.href='/register'">
+            Realizar inscripción
+        </button>
+    </section>
+
+    <!-- Suscripción descripción -->
+    <section id="quees" class="bg-gray-100 py-16 px-6 md:px-20">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Imagen -->
+            <div class="w-full md:w-1/2">
+                <img src="/Emprende.png" alt="Conecta CESDE" class="w-full rounded-lg shadow-lg object-cover" />
+            </div>
+
+            <!-- Descripción -->
+            <div class="w-full md:w-1/2 text-center md:text-left bg-gray-800 text-white p-8 rounded-xl shadow-xl">
+                <h2 class="text-4xl font-bold mb-4">CONECTA CESDE</h2>
+                <p class="text-lg leading-relaxed">
+                    Un puente entre las necesidades tecnológicas de las PYMEs y el
+                    talento joven de estudiantes de último semestre con ganas de
+                    aprender haciendo.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Problemas -->
+    <section id="resuelve" class="bg-gray-100 py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Columna Izquierda -->
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    Problemas que resolvemos
+                </h2>
+                <p class="text-gray-600 text-base leading-relaxed">
+                    Conecta CESDE es una solución educativa y empresarial que ayuda a:
+                </p>
+
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-yellow-500 text-xl font-bold mr-4">1</span>
+                        <p class="text-gray-700">
+                            Las PYMEs que necesitan soluciones digitales accesibles y efectivas.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-500 text-xl font-bold mr-4">2</span>
+                        <p class="text-gray-700">
+                            Estudiantes de últimos semestres que buscan experiencia real en proyectos tecnológicos.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-500 text-xl font-bold mr-4">3</span>
+                        <p class="text-gray-700">
+                            Instituciones que buscan conectar su formación con necesidades del mercado.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-yellow-500 text-xl font-bold mr-4">4</span>
+                        <p class="text-gray-700">
+                            El ecosistema regional que necesita impulsar la innovación a bajo costo.
+                        </p>
+                    </li>
+                </ul>
+
+                <button
+                    class="mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-md shadow hover:bg-yellow-500 transition">
+                    Leer más
+                </button>
+            </div>
+
+            <!-- Columna Derecha - Imagen decorativa -->
+            <div class="relative">
+                <div class="absolute -top-6 -left-6 w-40 h-40 bg-yellow-300 rounded-lg rotate-6 -z-10"></div>
+                <img src="https://impulsapopular.com/wp-content/uploads/2018/02/4047-Tips-para-dar-un-gran-servicio-al-cliente.jpg"
+                    alt="Emprendimiento" class="w-full rounded-lg shadow-lg object-cover" />
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="bg-gray-100 py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-2">
+                Beneficios sociales de empresa
+            </h2>
+            <p class="text-center text-sm text-gray-500 uppercase tracking-widest mb-12">
+                Ejemplos más demandados
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+                <!-- Beneficio 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transition hover:shadow-lg">
+                    <svg class="w-12 h-12 mb-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20 6h-4V4a2 2 0 0 0-4 0v2H8a2 2 0 0 0-2 2v1h16V8a2 2 0 0 0-2-2zM4 10v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4zm7 2h2v2h2v2h-2v2h-2v-2H9v-2h2v-2z" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-gray-800">Seguro médico</h3>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transition hover:shadow-lg">
+                    <svg class="w-12 h-12 mb-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4 4h16v2H4V4zm0 4h16v2H4V8zm0 4h10v2H4v-2zm0 4h10v2H4v-2zm12 0v-4l4 2-4 2z" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-gray-800">Teletrabajo</h3>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transition hover:shadow-lg">
+                    <svg class="w-12 h-12 mb-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2a9.93 9.93 0 0 0-7.07 2.93A10 10 0 1 0 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-gray-800">Bono alimentación</h3>
+                </div>
+
+                <!-- Beneficio 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transition hover:shadow-lg">
+                    <svg class="w-12 h-12 mb-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2a10 10 0 0 0 0 20h1v-2h-1a8 8 0 1 1 8-8v1h2v-1A10 10 0 0 0 12 2zm0 4a6 6 0 0 1 6 6v1h-2v-1a4 4 0 0 0-4-4V6z" />
+                    </svg>
+                    <h3 class="text-base font-semibold text-gray-800">Capacitación continua</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Participantes -->
+    <section id="participantes" class="bg-indigo-50 py-12 px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-10">
+            ¿Quiénes participarán?
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+
+            <!-- Docentes -->
+            <div
+                class="bg-white rounded-xl shadow-md flex flex-col items-center justify-center p-6 hover:shadow-lg transition">
+                <svg class="w-12 h-12 mb-3 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+                <span class="text-lg font-medium text-gray-700">Docentes</span>
+            </div>
+
+            <!-- Estudiantes -->
+            <div
+                class="bg-white rounded-xl shadow-md flex flex-col items-center justify-center p-6 hover:shadow-lg transition">
+                <svg class="w-12 h-12 mb-3 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 11l-8.48-4.5L12 5l8.48 4.5L12 14z" />
+                </svg>
+                <span class="text-lg font-medium text-gray-700">Estudiantes</span>
+            </div>
+
+            <!-- Empresas -->
+            <div
+                class="bg-white rounded-xl shadow-md flex flex-col items-center justify-center p-6 hover:shadow-lg transition">
+                <svg class="w-12 h-12 mb-3 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 22h16v-2H4v2zm1-4h14V3H5v15zm2-2V5h10v11H7z" />
+                </svg>
+                <span class="text-lg font-medium text-gray-700">Empresas</span>
+            </div>
+
+            <!-- Aliados -->
+            <div
+                class="bg-white rounded-xl shadow-md flex flex-col items-center justify-center p-6 hover:shadow-lg transition">
+                <svg class="w-12 h-12 mb-3 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M16 11c1.66 0 3-1.34 3-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm8 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zM8 13c-2.33 0-7 1.17-7 3.5V19h6v-2.5c0-.86.57-1.64 1.5-2.25-.5-.15-1.04-.25-1.5-.25z" />
+                </svg>
+                <span class="text-lg font-medium text-gray-700">Aliados</span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Funcionamiento -->
+    <section id="funcionamiento" class="py-10 px-5">
+        <h2 class="text-center text-gray-800 text-2xl font-bold mb-6">
+            ¿Cómo funciona?
+        </h2>
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-6 max-w-5xl mx-auto">
+            <!-- Paso 1 -->
+            <div class="w-full lg:w-1/3 text-center px-4">
+                <div class="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+                    <div class="w-1/3 h-20 flex items-center justify-center">
+                        <span class="text-xl font-bold">1</span>
+                    </div>
+                    <div class="w-2/3 bg-gray-200 h-24 flex flex-col items-center justify-center px-2 rounded-r-lg">
+                        <h3 class="font-bold text-sm">Registro</h3>
+                        <p class="text-xs text-gray-600">
+                            Las PYMEs registran sus proyectos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="w-full lg:w-1/3 text-center px-4">
+                <div class="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+                    <div class="w-1/3 h-20 flex items-center justify-center">
+                        <span class="text-xl font-bold">2</span>
+                    </div>
+                    <div class="w-2/3 bg-gray-200 h-24 flex flex-col items-center justify-center px-2 rounded-r-lg">
+                        <h3 class="font-bold text-sm">Análisis y segmentación</h3>
+                        <p class="text-xs text-gray-600">
+                            El equipo CESDE analiza y segmenta los proyectos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="w-full lg:w-1/3 text-center px-4">
+                <div class="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+                    <div class="w-1/3 h-20 flex items-center justify-center">
+                        <span class="text-xl font-bold">3</span>
+                    </div>
+                    <div class="w-2/3 bg-gray-200 h-24 flex flex-col items-center justify-center px-2 rounded-r-lg">
+                        <h3 class="font-bold text-sm">Asignación</h3>
+                        <p class="text-xs text-gray-600">
+                            CESDE asigna a los estudiantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-6 mt-6 max-w-4xl mx-auto">
+            <!-- Paso 4 -->
+            <div class="w-full lg:w-1/2 text-center px-4">
+                <div class="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+                    <div class="w-1/3 h-20 flex items-center justify-center">
+                        <span class="text-xl font-bold">4</span>
+                    </div>
+                    <div class="w-2/3 bg-gray-200 h-24 flex flex-col items-center justify-center px-2 rounded-r-lg">
+                        <h3 class="font-bold text-sm">Seguimiento</h3>
+                        <p class="text-xs text-gray-600">
+                            Docentes realizan seguimiento y acompañamiento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="w-full lg:w-1/2 text-center px-4">
+                <div class="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+                    <div class="w-1/3 h-20 flex items-center justify-center">
+                        <span class="text-xl font-bold">5</span>
+                    </div>
+                    <div class="w-2/3 bg-gray-200 h-24 flex flex-col items-center justify-center px-2 rounded-r-lg">
+                        <h3 class="font-bold text-sm">Entrega</h3>
+                        <p class="text-xs text-gray-600">
+                            Entrega de proyectos a las PYMEs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-16 bg-gradient-to-br from-green-50 to-cyan-100">
+        <div class="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
+            <div class="mb-12 space-y-2 text-center">
+                <span
+                    class="block w-max mx-auto px-3 py-1.5 border border-green-200 rounded-full bg-green-100 text-green-600">
+                    Testimonios
+                </span>
+                <h2 class="text-2xl text-cyan-900 font-bold md:text-4xl">
+                    Lo que dicen nuestros usuarios
+                </h2>
+                <p class="lg:w-6/12 lg:mx-auto">
+                    Historias reales de cómo Conecta CESDE ha impactado positivamente a PYMEs colombianas.
+                </p>
+            </div>
+
+            <div class="grid gap-12 lg:grid-cols-2">
+                <!-- Testimonio 1 -->
+                <div class="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                    <img src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp"
+                        alt="Fernando Cifuentes" loading="lazy"
+                        class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+                    <div class="sm:w-7/12 pl-0 p-5">
+                        <div class="space-y-2">
+                            <div class="space-y-4">
+                                <h4 class="text-2xl font-semibold text-cyan-900">María Gómez</h4>
+                                <p class="text-gray-600 italic">
+                                    “Gracias a Conecta CESDE, mi PYME logró tener su primera aplicación web sin
+                                    invertir grandes recursos.”
+                                </p>
+                            </div>
+                            <span class="block text-sm text-cyan-600">Fundadora de EcoTienda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                    <img src="https://img.freepik.com/foto-gratis/joven-barbudo-camisa-rayas_273609-5677.jpg?semt=ais_hybrid&w=740"
+                        alt="Usuario 2" loading="lazy"
+                        class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+                    <div class="sm:w-7/12 pl-0 p-5">
+                        <div class="space-y-2">
+                            <div class="space-y-4">
+                                <h4 class="text-2xl font-semibold text-cyan-900">Carlos Pérez</h4>
+                                <p class="text-gray-600 italic">
+                                    “El acompañamiento de estudiantes nos permitió crear una solución digital
+                                    funcional y profesional.”
+                                </p>
+                            </div>
+                            <span class="block text-sm text-cyan-600">CEO de AgroMovil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contactanos" class="bg-gray-800 text-white py-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
+
+            <!-- Columna izquierda: formulario -->
+            <div class="w-full md:w-[45%] bg-white p-4 rounded border border-gray-200 text-gray-800">
+                <form action="https://formbold.com/s/FORM_ID" method="POST" class="space-y-5">
+
+                    <div>
+                        <label for="name" class="block text-base font-medium mb-1 text-gray-800">
+                            Nombre completo
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="Tu nombre"
+                            class="w-full rounded border border-gray-300 py-1.5 px-3 text-sm focus:border-pink-500 focus:shadow-md outline-none" />
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-base font-medium mb-1 text-gray-800">
+                            Correo electrónico
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@dominio.com"
+                            class="w-full rounded border border-gray-300 py-1.5 px-3 text-sm focus:border-pink-500 focus:shadow-md outline-none" />
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-base font-medium mb-1 text-gray-800">
+                            Asunto
+                        </label>
+                        <input type="text" name="subject" id="subject" placeholder="Asunto del mensaje"
+                            class="w-full rounded border border-gray-300 py-1.5 px-3 text-sm focus:border-pink-500 focus:shadow-md outline-none" />
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-base font-medium mb-1 text-gray-800">
+                            Mensaje
+                        </label>
+                        <textarea name="message" id="message" rows="4" placeholder="Escribe tu mensaje..."
+                            class="w-full rounded border border-gray-300 py-1.5 px-3 text-sm resize-none focus:border-pink-500 focus:shadow-md outline-none"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                            class="bg-pink-600 text-white font-semibold py-2 px-6 rounded hover:bg-pink-700 transition">
+                            Enviar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Columna derecha: información de contacto -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+                <p class="mb-2">
+                    Email:
+                    <a href="mailto:conecta@cesde.edu.co" class="underline hover:text-pink-300">conecta@cesde.edu.co</a>
+                </p>
+                <p class="mb-2">Teléfono: (604) 444 1234</p>
+                <p class="mb-4">Redes sociales:</p>
+
+                <div class="flex justify-center md:justify-start gap-6">
+                    <a href="https://facebook.com/cesde" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-pink-300 transition">
+                        Facebook
+                    </a>
+                    <a href="https://instagram.com/cesdeoficial" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-pink-300 transition">
+                        Instagram
+                    </a>
+                    <a href="https://co.linkedin.com/company/cesde-formaci%C3%B3n-t%C3%A9cnica" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-pink-300 transition">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
