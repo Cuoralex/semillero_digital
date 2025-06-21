@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Inscripción PYMES</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+<section class="p-8 max-w-4xl mx-auto filter grayscale">
+  <div class="px-5 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-3xl font-bold mb-8 border-b pb-4">
+        Formulario de inscripción para pequeñas y medianas empresas (pymes)
+      </h1>
+      <p class="text-base leading-relaxed mx-auto lg:w-3/4">
+        Complete los siguientes campos para registrar su empresa.
+      </p>
+    </div>
+
+    <form method="post" enctype="multipart/form-data" class="space-y-10">
+
+      <!-- 1. Información General de la Empresa -->
+      <fieldset class="mb-8">
+        <legend class="text-xl font-semibold mb-4">1. Información General de la Empresa</legend>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="text" name="razon_social" placeholder="Razón Social" required class="input border rounded px-4 py-2" />
+          <input type="text" name="nombre_comercial" placeholder="Nombre Comercial" class="input border rounded px-4 py-2" />
+          <input type="text" name="tipo_sociedad" placeholder="Tipo de Sociedad (SAS, LTDA, SA...)" class="input border rounded px-4 py-2" />
+          <input type="text" name="nit" placeholder="Número de Identificación Tributaria (NIT)" required class="input border rounded px-4 py-2" />
+          <input type="date" name="fecha_constitucion" placeholder="Fecha de Constitución" class="input border rounded px-4 py-2" />
+          <input type="text" name="actividades" placeholder="Actividades Económicas" required class="input border rounded px-4 py-2" />
+          <input type="number" name="empleados" placeholder="Número de Empleados" class="input border rounded px-4 py-2" />
+        </div>
+      </fieldset>
+
+      <!-- 2. Información de Contacto -->
+      <fieldset class="mb-8">
+        <legend class="text-xl font-semibold mb-4">2. Información de Contacto</legend>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="direccion" placeholder="Dirección Principal" required class="input border rounded px-4 py-2" />
+          <input type="text" name="ciudad" placeholder="Ciudad y Departamento" class="input border rounded px-4 py-2" />
+          <input type="text" name="telefono" placeholder="Teléfono Fijo y/o Móvil" class="input border rounded px-4 py-2" />
+          <input type="email" name="correo" placeholder="Correo Electrónico Corporativo" class="input border rounded px-4 py-2" />
+          <input type="url" name="web" placeholder="Página Web" class="input border rounded px-4 py-2" />
+        </div>
+      </fieldset>
+
+      <!-- 3. Información del Representante Legal -->
+      <fieldset class="mb-8">
+        <legend class="text-xl font-semibold mb-4">3. Información del Representante Legal</legend>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="nombre_representante" placeholder="Nombre Completo" required class="input border rounded px-4 py-2" />
+          <input type="text" name="documento" placeholder="Tipo y Número de Documento" required class="input border rounded px-4 py-2" />
+          <input type="text" name="telefono_representante" placeholder="Teléfono de Contacto" class="input border rounded px-4 py-2" />
+          <input type="email" name="correo_representante" placeholder="Correo Electrónico" class="input border rounded px-4 py-2" />
+        </div>
+      </fieldset>
+
+      <!-- 4. Información Financiera y Tributaria -->
+      <fieldset class="mb-8">
+        <legend class="text-xl font-semibold mb-4">4. Información Financiera y Tributaria</legend>
+        <div class="

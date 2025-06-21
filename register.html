@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Inscripción</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Encabezado -->
+  <header class="bg-white shadow-md px-6 py-4 sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+
+            <!-- Logo -->
+            <a href="https://www.cesde.edu.co" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.cesde.edu.co/wp-content/uploads/2023/02/logo-Cesde-2023.svg" alt="Cesde"
+                    width="180" height="40" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6 text-gray-700 text-sm font-medium">
+                <a href="/index.html" class="hover:text-blue-600 transition-colors duration-200">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600 transition-colors duration-200">Servicios</a>
+                <a href="#nosotros" class="hover:text-blue-600 transition-colors duration-200">Nosotros</a>
+                <a href="#contacto" class="hover:text-blue-600 transition-colors duration-200">Contacto</a>
+                <a href="/register.html"
+                    class="px-4 py-2 rounded-md bg-pink-400 text-white hover:bg-pink-700 transition">Registro</a>
+                <a href="/login.html"
+                    class="px-4 py-2 rounded-md border border-pink-600 text-pink-600 hover:bg-pink-50 transition">Login</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 text-xl">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu (oculto inicialmente) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 px-6 space-y-4 text-gray-700 text-sm font-medium">
+            <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Inicio</a>
+            <a href="#servicios" class="block px-4 py-2 hover:bg-gray-100">Servicios</a>
+            <a href="#nosotros" class="block px-4 py-2 hover:bg-gray-100">Nosotros</a>
+            <a href="#contacto" class="block px-4 py-2 hover:bg-gray-100">Contacto</a>
+            <a href="/register.html"
+                class="block px-4 py-2 rounded-md bg-pink-400 text-white hover:bg-pink-700 transition">Registro</a>
+            <a href="/login.html"
+                class="block px-4 py-2 rounded-md border border-pink-600 text-pink-600 hover:bg-pink-50 transition">Login</a>
+        </div>
+    </header>
+
+  <!-- Contenido -->
+  <div class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl text-gray-700 bg-gray-50 font-bold text-center mb-6">Formulario de Inscripción</h1>
+
+    <!-- Selector -->
+    <div class="mb-8">
+      <label for="tipo" class="text-gray-900 block font-medium mb-2">
+        Seleccione el tipo de inscripción:
+      </label>
+      <select id="tipo" class="border bg-gray-50 text-gray-700 rounded p-2 w-full max-w-sm">
+        <option value="estudiante">Estudiante</option>
+        <option value="pyme">PyME</option>
+      </select>
+    </div>
+
+    <!-- Formulario Estudiante -->
+    <div id="form-estudiante">
+      <form method="post" class="space-y-6 border p-6 rounded-md bg-white shadow">
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">Formulario Estudiante</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="nombre" placeholder="Nombre Completo" required class="border p-2 rounded w-full" />
+          <input type="text" name="documento" placeholder="Tipo y Número de Documento" required class="border p-2 rounded w-full" />
+          <input type="email" name="correo" placeholder="Correo Electrónico Institucional" required class="border p-2 rounded w-full" />
+          <input type="tel" name="telefono" placeholder="Teléfono" required class="border p-2 rounded w-full" />
+          <input type="text" name="programa" placeholder="Programa de Formación" required class="border p-2 rounded w-full" />
+          <select name="semestre" required class="border p-2 rounded w-full">
+            <option value="">Semestre Actual</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <textarea name="motivacion" placeholder="¿Por qué quieres participar?" required rows="4" class="w-full border p-2 rounded"></textarea>
+        <input type="number" name="disponibilidad" placeholder="Horas disponibles por semana" required class="w-full border p-2 rounded" />
+        <label class="flex items-start gap-2">
+          <input type="checkbox" required class="mt-1" />
+          <span>Autorizo el tratamiento de mis datos personales.</span>
+        </label>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+          Enviar Inscripción
+        </button>
+      </form>
+    </div>
+
+    <!-- Formulario PyME -->
+    <div id="form-pyme" class="hidden">
+      <form method="post" class="space-y-6 border p-6 rounded-md bg-white shadow">
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2">Formulario PyME</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="razon_social" placeholder="Razón Social" required class="border p-2 rounded w-full" />
+          <input type="text" name="nit" placeholder="NIT" required class="border p-2 rounded w-full" />
+          <input type="text" name="ciudad" placeholder="Ciudad y Departamento" class="border p-2 rounded w-full" />
+          <input type="email" name="correo" placeholder="Correo Electrónico" required class="border p-2 rounded w-full" />
+          <input type="url" name="web" placeholder="Página Web" class="border p-2 rounded w-full" />
+        </div>
+        <textarea name="actividades" placeholder="Actividades Económicas" rows="3" class="w-full border p-2 rounded"></textarea>
+        <label class="flex items-start gap-2">
+          <input type="checkbox" required class="mt-1" />
+          <span>Declaro que la información es veraz.</span>
+        </label>
+        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+          Enviar Registro
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script: alternar formularios -->
+  <script>
+    const selector = document.getElementById("tipo");
+    const formEst = document.getElementById("form-estudiante");
+    const formPyme = document.getElementById("form-pyme");
+
+    selector.addEventListener("change", function () {
+      if (this.value === "estudiante") {
+        formEst.classList.remove("hidden");
+        formPyme.classList.add("hidden");
+      } else {
+        formEst.classList.add("hidden");
+        formPyme.classList.remove("hidden");
+      }
+    });
+  </script>
+
+</body>
+</html>
